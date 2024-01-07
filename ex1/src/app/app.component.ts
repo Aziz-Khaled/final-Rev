@@ -19,6 +19,15 @@ export class AppComponent implements OnInit {
   poste : ""
   }
 
+
+  updatedEmployee : employee ={
+    id : 0 ,
+    name : "" ,
+    salaire : 0 , 
+    poste : ""
+  }
+
+
     constructor (private GempService : GestionEmpService ) {}
 
 ngOnInit(): void {
@@ -40,5 +49,31 @@ postMethod () {
   })
 }
 
+
+
+getEmployeeInfo (empId : number) {
+  this.GempService.getEmployeeById (empId).subscribe ((res) => {
+    this.updatedEmployee = res ; 
+
+  })
+}
+
+updateEmployeeById (employeeId : number) {
+  this.GempService.updateEmployee(this.updatedEmployee , employeeId )
+  .subscribe(
+    ()=>{
+      window.location.reload(); 
+    }
+  )
+}
+
+
+
+DeleteEmployeeById (employeeId : number) {
+  this.GempService.deleteEmployee(employeeId).subscribe ( () => {
+    window.location.reload()
+    console.log ("employee deleted")
+  })
+}
 
 }
