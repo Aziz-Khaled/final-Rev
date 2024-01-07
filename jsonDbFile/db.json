@@ -1,0 +1,52 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "safwene nacheb",
+      "salaire": 4500,
+      "poste": "PDG"
+    },
+    {
+      "id": 2,
+      "name": "bessem ouslati",
+      "salaire": 4500,
+      "poste": "PDG"
+    },
+    {
+      "id": 3,
+      "name": "ahmed GOOUUUDEEEEE",
+      "salaire": 4500,
+      "poste": "PDG"
+    },
+    {
+      "id": 4,
+      "name": "akram Wabna",
+      "salaire": 4500,
+      "poste": "PDG"
+    },
+    {
+      "id": 5,
+      "name": "",
+      "salaire": 0,
+      "poste": ""
+    },
+    {
+      "id": 6,
+      "name": "",
+      "salaire": 0,
+      "poste": ""
+    },
+    {
+      "id": 7,
+      "name": "bous3ada",
+      "salaire": "100",
+      "poste": "7amel fel nezla"
+    },
+    {
+      "id": 8,
+      "name": "za3kaoui",
+      "salaire": "123456789",
+      "poste": "9ahboun"
+    }
+  ]
+}
